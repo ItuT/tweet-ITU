@@ -2,16 +2,16 @@
 
 
 
-Run
+# Run
     - mvn clean install
 
-Then
+# Then
     run
     - mvn clean compile assembly:single
-Then
+# Then
     - Copy tweet.txt and user.txt into the target directory
 
-Then
+# Then
     run
     - java -jar tweetfeed-1.0-jar-with-dependencies.jar
 
