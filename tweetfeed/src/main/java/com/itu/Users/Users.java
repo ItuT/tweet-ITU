@@ -9,6 +9,7 @@ import java.util.*;
 
 public class Users {
 
+
     private HashMap<String,String[]> mapUserFollows = new HashMap<>();
     private Map<String, String[]> userFollowersAlphabeticalListMap = null;
     private List<String> userAlphaList = new ArrayList<>();
@@ -26,7 +27,7 @@ public class Users {
         }
     }
 
-    public void updateFolloweres(String user, String usersFollowing){
+    private void updateFolloweres(String user, String usersFollowing){
         SimpleLog.log("updateFolloweres(String user, String usersFollowing)");
         String[] names = usersFollowing.split(",");
 
@@ -69,6 +70,11 @@ public class Users {
 
     public List<String> getUserAlphaList() {
         return userAlphaList;
+    }
+
+
+    public HashMap<String, String[]> getMapUserFollows() {
+        return mapUserFollows;
     }
 
 }
